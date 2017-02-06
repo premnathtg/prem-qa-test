@@ -35,6 +35,15 @@ resources:
       isPull: false
     seed:
       versionName: "latest" 
+      
+    - name: chrome-node1-img
+    type: image
+    #integration: docker-hub-integration
+    pointer:
+      sourceName: "selenium/node-chrome"
+      isPull: false
+    seed:
+      versionName: "latest"
 	  
   - name: link-opts
     type: dockerOptions
