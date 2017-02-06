@@ -27,4 +27,4 @@ jobs:
       - IN: selenium-test-man
       - IN: selenium-clu
       - TASK: managed
-        deployMethod: replace
+        deployMethod: upgrade
