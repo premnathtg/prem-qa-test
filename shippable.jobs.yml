@@ -1,6 +1,6 @@
 jobs:
 
-  - name: selenium-test-man
+  - name: selenium-test-man-1
     type: manifest
     steps:
       - IN: hub
@@ -24,7 +24,7 @@ jobs:
   - name: selenium-ecs-deploy
     type: deploy
     steps:
-      - IN: selenium-test-man
+      - IN: selenium-test-man-1
       - IN: selenium-clu
       - TASK: managed
         deployMethod: upgrade
